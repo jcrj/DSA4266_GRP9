@@ -15,8 +15,6 @@
 - [Evaluation Metrics](#evaluation-metrics)
 - [Results](#results)
 - [Conclusion](#conclusion)
-- [Dependencies](#dependencies)
-- [How to Run the Code](#how-to-run-the-code)
 - [References](#references)
 
 ## Introduction
@@ -158,65 +156,6 @@ For clustering (K-Means):
 - **Neural Networks vs. Traditional Models:** Deep learning models, particularly those with recurrent architectures, demonstrated superior ability in handling sequence data for cyberbullying detection.
 
 We however would like to put ourselves in a real world situation and envision working with business stakeholders. We think that LGBM may be the most practical solution as it is easier to explain and achieve similar results as Bidirectional LSTM. Although Bidirectional LSTM edges out LGBM in terms of correctly classifying true negative instances, it is important to remember the context of our project which is to identify cyberbullying cases. Both LGBM and Bidirectional LSTM actually achieved similar results. But in an academic setting, for pure optimisation, Bidirectional LSTM is a more attractive model to use as we have more ways to optimise it, and there is the added incentive of it being the most performant out of all out the box.
-
-## Dependencies
-
-The project uses the following Python libraries:
-
-- pandas
-- numpy
-- matplotlib
-- plotly
-- scikit-learn
-- imblearn
-- nltk
-- gensim
-- tensorflow
-- keras
-- catboost
-- lightgbm
-- xgboost
-- wordcloud
-
-## How to Run the Code
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/cyberbullying-detection.git
-   cd cyberbullying-detection
-   ```
-
-2. **Install Dependencies:**
-
-   Ensure you have Python 3.7 or higher installed.
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Download Necessary NLTK Data:**
-
-   In your Python environment:
-
-   ```python
-   import nltk
-   nltk.download('punkt')
-   nltk.download('stopwords')
-   nltk.download('wordnet')
-   ```
-
-4. **Run the Script:**
-
-   ```bash
-   python cyberbullying_detection.py
-   ```
-
-5. **Results:**
-
-   - The script will output performance metrics for each model.
-   - Plots for ROC and PR curves will be displayed.
-   - Models and embeddings are saved for future use.
 
 ## References
 
